@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study in Latvia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Study in Latvia | Degree Programs</h1>
+    <div class="filter-section">
+      <label for="degree-level">Filter by Degree Level:</label>
+      <select id="degree-level" onchange="filterPrograms()">
+        <option value="all">All</option>
+        <option value="bachelor">Bachelor's</option>
+        <option value="master">Master's</option>
+        <option value="doctoral">Doctoral</option>
+      </select>
+    </div>
+    <div id="program-list" class="program-list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
